@@ -1,0 +1,316 @@
+
+CSS - 3
+    - inline : same styling we have to copy multiple places
+    - internal :
+        </body>
+        <style>
+        .paragraph{
+            border: "2px solid red"
+        }
+        </style>
+        
+    - external : 
+    style.css:
+        .paragraph{
+            border: "2px solid red"
+        }
+
+
+Day 2:
+    - Javascript  : Programming lang(scripting lang)
+                  : dynamic prg lang
+                  : interpreted lang (compiler /interpreter)
+                        - interpreter : line by line:
+                            - capture your compile time error easy
+                            - u can run you part of code easily
+                  : Not fully based on oops
+                  : Used to make our UI dynamic
+                  : web based prg lang
+                  : it helps to add events to our static html pages
+                  : we can interact with html contents and style components 
+
+                  - scripting lang  
+                    - unsigned int x = 12
+                    - int /byte x = 12
+                    - long x = 12l
+                    - float x = 12.0f
+                    - var x = 12 // integer
+                    - var x = "12" //string
+                    - var x = [1,2,3,4] //array type 
+        - variables
+            : container
+            : storage container
+            : used to assign dynamic values
+            : can be changed / assigned during runtime
+            function sum(10,20){
+                console.log("print value of x+y:"+x+y)
+            }
+            : local / global variables
+            : keywords:
+                - var: use for global scope, 
+                - let: block scope, 
+                - const : final variable
+
+        - data types
+            - primitive datatype
+                : string('' / ""), number(int/long/float/double), boolean(true/false), 
+                : null, undefine
+                : var x = null;
+                
+            - non-primitive datatype
+                : Object = represents instance to access member
+                    - Employee class    
+                        : int x, y 
+                        : method : sum, division
+                    
+                    - Student class:
+                        Object : new Employee()
+
+                {
+                    key: value
+                }
+                : Array = similar group of variable ["1","2"]
+                : RegExp = represents group of expression 
+                    : form 
+                        : email([__@________])
+                        : paragraphs : not found : invalid
+                
+
+
+        - Operators
+            : Arithmetic Operators :  +, -, *, / , %(modulus), ++, -- (x,y)
+            : Relational Operators :  >,<,=>,<=, ==, ===(identical), !=, !==(not identical)
+                == : 10 == "10" : true
+                === : 10(number) === "10"(string) : false
+            : Bitwise Operators : &, |, ^, ~, << , >>, >>>(10 >>> 3) = 3
+            : Logical Operators : &&, ||, !
+            : assignment/shorthand operator : +=, /= 
+                x = 10;
+                x += 12 => x = x(10) + 12
+                log(x) //o/p
+            : Special Operators : type of x, (?  : )
+
+        - if statement/switch case
+            - conditional statements
+                - if
+                - if /if-else/else
+                - if - else
+            
+            - switch case   
+
+                switch(grade) {
+                    case "A":
+                    log("dont study this level")
+                    break;
+
+                    default:
+                    log("lets bunk classes if we arent A grade")
+                    break;
+                }//"A"
+        - loops
+         : for loop(intialvalue; check conditional value; increament)
+         : for each()
+         : while()
+         : do-while()
+
+        - function
+         : block of code/scope
+            {
+
+                : variable(number/string/object/array)
+
+            }
+            function xmap(ymap){ //1
+
+
+            }
+
+            function ymap(x){
+
+                log("print value of x"+x)
+            }
+
+            xmap(ymap("Chandra))
+
+        - Objects
+         : let student ={
+            "college" :"SIT",
+            "rollno" : "SIT_ECE_123"
+
+         }
+
+        let student = new Object()
+        // h/w : learn how to create object using constructor 
+        //acces object : student.college 
+
+        - Array : ex of foreach
+            - var name = ['Raj','Ayushi'];
+            - var rollnum = new Array()
+            - // h/w how to create array using constructor 
+            - inbuilt function:
+                : 
+        - Events
+        - Event Listners
+
+
+console.log("print hello")
+
+
+const x = 12
+
+function xmap(){
+    x = 14;
+    console.log("xmap to"+x)
+}
+
+
+//react
+- it is js library UI
+- developed by FB : 2015 
+- components based library : everything in react is a components
+- these components resembles with tag <App />
+- two type of components in react : class / functional
+- react 16.8.0 : introduced functional components
+- lifecycle : doc got rendered, when the component got mount,will mount
+- class component : lifecycle methods : componentWillMount(), componentDidMount(preState, currState), render()
+- functional components : hooks
+- hooks -> function : useState(): state management, useEffect(): lifecycle
+        -> useMemo, useContext, useRedux
+
+
+//Add js code to handle input and form submit event in your login and signup page.
+//create a react app : counter app
+
+
+//Agenda :
+    - NO choice
+    - Start Mobile Dev
+    - ES6 and its functionalites
+    - Package.json
+    - package-lock.json
+    - spread Operators
+    - useEffects
+    - module exports
+    - module import
+    - props
+    ----------------------------------------------------------------
+    - MObile Dev
+
+---------------------------------------
+Reacts : state management 
+       : props
+       : useEffects
+
+ES6:
+    - 2015 : 
+    - defines rule and guideline for which complaint to js
+    - variables:
+        - let and const
+    - Arrow function:
+        - const sum = (a ,b) => a + b;
+        - const isLoading = data => return false;
+        - const App = () => return <h1>Hello team</h1>
+    - Template Literals
+        - "Hello how are you "+name1+ "How are you "+ name2+ ""
+        - `Hello How are you ${name1} , How are you ${name}`
+    - Class    
+        - class Reactangle{
+            constructor(w, h){
+                this.w = w;
+                this.h = h;
+            }
+            perimeter(){
+
+            }
+        }
+    
+    - Promises, (callback hell) 
+    - async await
+    - Module export and import
+        - export default function App()
+        - import App, {}
+    
+    - spread operator:
+        - ...
+        - array and Objects, string
+        - let str = "hello";
+            log(...str);
+
+    
+
+
+Day5:
+    - npm
+    - basic uses of package.json and package-lock.json
+    - walk through the code (react native project)
+    - handle or learn few new components
+    - 9:28 am
+
+
+NPM :
+    - node package manager ?
+    - npm stands for  node package manager.
+    - Basically it is a default package manager for node.js and it allows us to install,
+    - share, and manage libraries and packages for our projects.
+    - 
+
+Day6:
+   - expo cli and react native cli 
+   - components - > ActivityIndicator
+                - > View
+                - > Text
+                - > Button
+                - > TextInput
+
+   - Assignments(single)
+        - > Welcome page from Getting started + pending h/w : display 3rd section on clicking back
+        - > Login and Sign Up page  
+
+
+- Expo cli and react native cli
+    - > cli ??
+    - > command line interface (expo and react native)
+
+    -> Expo cli :
+        - developed after react native cli
+        - workflow : managed the react native apps
+                   : it removed all the complexity from a react native perpective 
+                   : it take time to load the app
+                   : no development
+                   : to access expo based app you can use expo cmd using npx to create react native app
+        - Features:
+                   : So react Native cli doesnt give so many infra  features like camera, statusbar, etec
+                   : which you expo provide : camera, notification, status bar, maps, and many more
+        
+        - Development :
+                   : it allows us to run the application on local server
+                   : it also allow us to run on virtual machine through local server
+                   : Best way to develop POCs : sample apps
+                   : it take cares to run app on difference screens like, simlutor, web abse, or through expo go App
+                   : debugging is faster and visualization too
+
+        - Deployment : 
+                   : Using expo u can bundle up the package easily
+                   : Then it helps to publish you app on local server or deployment server.
+
+    -> React Native cli :
+        - workflow : Bare workflow  -> it doesnt give you any thing, but large supportability  
+        - customizations : in RN cli : u have to change code if needed .
+        - Development : u need to have virtual machine 
+                      : xcode/android studio (virtual machine)
+                      : then you to setup cd to run on these VMs /simlutors 
+                      : Full benefits of using native configurations: IOS / Android 
+                      : Deployment : Xcode -> IOS / Andriod : to build package and run on server
+
+--------------------------------------------------------xxxxxxxx--------------------------------------------------------
+
+Welcome to Mobile Dev:
+    -> every day assignments
+    -> around the logic or component which we will learn
+    -> we will be building towards default e-commerce App project(! I will build) 
+    -> u can make a grp(10) : project idea : share with us : usecase (optional)
+
+
+
+- props in react (next session)
+      
