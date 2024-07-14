@@ -264,8 +264,14 @@ Day6:
 
    - Assignments(single)
         - > Welcome page from Getting started + pending h/w : display 3rd section on clicking back
-        - > Login and Sign Up page  
+        - > Login and Sign Up page  (username, password, email)
 
+        -> Sequence
+            -> App lands on Getting Started page
+            -> onClick on Getting Started button , user will goto signup page
+            -> in Sign up user need to enter some details -> on signing up it should goto login page
+            -> in Login page user should login with valid username-> on login it should land on welcome page.
+            -> Welcome page there should be a button to log out which will take use to main Getting Started page
 
 - Expo cli and react native cli
     - > cli ??
@@ -311,6 +317,11 @@ Welcome to Mobile Dev:
     -> u can make a grp(10) : project idea : share with us : usecase (optional)
 
 
-
-- props in react (next session)
+Day7
+    - props in react (next session)
+    - FlatList
+    - Custom Component : Card component
+    - ActivityIndicator
+    - Image
+    - ImageBackground
       
