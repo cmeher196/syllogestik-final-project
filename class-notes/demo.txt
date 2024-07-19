@@ -416,3 +416,40 @@ Assignment: 10 marks
         - SectionList - try out from products(like shoes, dress, etc)
         - SafeAreaView / View
         - Switch - changing background color
+
+
+App :
+    - products
+        - title, description, discount,  price
+        - wishlist -> wishlist screen
+        - cart 
+        - checkout page
+        - payment gw
+
+Day11:
+    - Navigation
+        : It helps to move/navigated from one screen to another
+        : It gives features like styling components, adding icons, changing color 
+        : Easy Navigation
+        : It also provides normal animation
+        : It provides different types of navigation
+            - Stack/Drawer/Tabs
+
+
+        - Stack Navigation
+            - Its a type of Navigation
+            - Where screens are piled up as stacks as in stack DS 
+                - [FILO] -> [ProductScreens,LoginScreen,gettingstarted,welcomescreen]
+                            [LoginScreen,gettingstarted,welcomescreen]
+                            [gettingstarted,welcomescreen]
+
+        - drawer
+        
+        - Tabs
+            -Bottom Tabs
+        
+    - components
+        - TouchableOpactity
+        - Pressable
+        - Modal
+        - ActivityIndicator
