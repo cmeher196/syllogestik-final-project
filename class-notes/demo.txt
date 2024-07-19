@@ -318,10 +318,101 @@ Welcome to Mobile Dev:
 
 
 Day7
-    - props in react (next session)
+    - props in react
     - FlatList
     - Custom Component : Card component
     - ActivityIndicator
     - Image
     - ImageBackground
       
+
+
+Props:
+    - Setting up relationship between Parent and Child component
+    - Used to send properties from Parent to child to perform some action 
+    - It is object notation 
+    - We can send props through Component itself by passing a prop name 
+    - We cam also pass some trigger action as well
+    - Sample from parent
+        - <Product title={data.title} price={data.price} discount={data.discount}
+
+
+
+FlatList:
+    - Powerful component of React Native
+    - it used to render the data Lists in the component or page
+    - it has its own properties like renderData, data, numSection, etec
+
+
+//in react js
+    const data =[{
+        'id' : "1234"
+        'name' :"Chandra"
+
+    },
+    {
+        'id' : "1236"
+        'name' :"Shruti"
+
+    },
+    {
+        'id' : "1235"
+        'name' :"Shubham"
+
+    }
+    
+    ]
+
+    {
+        data.map(item =>{
+
+            <Card key={item.key} title={item.name} />
+        })
+    }
+
+- ActivityIndicator:
+    - this component is a loader component
+    - default shape is circular
+
+
+-> Sequence
+            (update your existing assignment with new concept learnt today)
+            -> App lands on Getting Started page
+            (below setup using different components, like Signup Component, Login, Component, Product Component, Card Component, etc)
+            (Use props whereever is required)
+            -> onClick on Getting Started button , user will goto signup page
+            -> in Sign up user need to enter some details -> on signing up it should goto login page
+            -> in Login page user should login with valid username-> on login it should land on welcome page.
+            -> Welcome page there should be two buttons
+                -> goto product page with list of products in card component
+                -> log out which will take use to main Getting Started page
+            - PS(welcome and product page should have User name on the top of the page)
+
+DAY8
+    - show how FlatList used for scroll - done
+    - Image - done
+    - ImageBackground -done
+    - ScrollView - done
+    - SectionList - done
+    - SafeAreaView - done
+    - Switch - done
+
+DAY9:
+    - ActivityIndicator is optional
+    - hooks(useState, useEffects, useContext, useRedux)    
+    - Context and useContext(next session)
+    - 
+
+Assignment: 10 marks
+    - create 2 buttons
+        - one FlatList, ScrollView (array.map())
+    - reuse card component to accomodate Images in card
+    - passed it from main component and display
+    - Also try to use all the new components learnt
+        - show how FlatList used for scroll - done
+        - Image
+        - ImageBackground(sign up , login page, getting started page, welcome page)
+        - ScrollView
+        - SectionList - try out from products(like shoes, dress, etc)
+        - SafeAreaView / View
+        - Switch - changing background color
