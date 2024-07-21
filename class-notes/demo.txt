@@ -444,7 +444,7 @@ Day11:
                             [gettingstarted,welcomescreen]
 
         - drawer
-        
+
         - Tabs
             -Bottom Tabs
         
@@ -453,3 +453,154 @@ Day11:
         - Pressable
         - Modal
         - ActivityIndicator
+
+
+
+Day11
+    - tab Navigation - 5mins
+    - merged Stack and Drawer navigators
+--------------------------------------------------
+    - callback, promise, async-await : (10-15mins) //js
+        - JS synchronous process bcz it is interpreted based
+        - for loop : 10000(flipkart) : 500ms : 0.5 secs
+        - display ads banner 
+
+        - asynchronous 
+            - give me my stuff(method call, thread(excutable thread-> prg), etc) which blocks the execution of the main program
+            - let me handle this bulk operation and let other lines of code get executed
+            - setTimeout(()=>{},1000)
+        
+        - callback :
+            function xyz(a, callback){
+                console.log(a);
+
+                callback("Chandra", callback){
+                    callback(5,6,callback){
+                        callback(1,2,3,callback){
+                            callback(2,3,4){
+                        }
+                    }
+                };
+            }-> callback hell
+
+
+            function abc(name, callback){
+             console.log(name)
+             callback(a,b);
+            }
+
+            function bcc(a,b, callback){
+                console.log( a+b);
+                callback(a,b,c);
+            }
+
+            function ccb(a,b,c){
+                return a+b+c;
+            }
+
+        - Promises(resolved, rejected)
+            - new Promise(resolved, rejected){
+                if(x > 10){
+                    resolved(console.log("resolved"))
+                } else{
+                    reject(console.log("rejected"))    
+                }
+            }
+
+            doSum(a, b){
+                new Promise(resolved, rejected){
+                    if(a>0 && b>0){
+                        return resolve(
+                            new Promise(resolved, rejected){
+                                if(a>0 && b>0){
+                                return resolve(a+b+a+b)
+                                }else {
+                                    reject("again issue")
+                                }
+                            }
+                        )
+                    } else{
+                        reject("error is a and b not a natural number")
+                    }
+                }
+            }
+
+            function sumCalc(a,b){ //-1,-2
+                doSum(a,b).then(x => console.log(x))
+                          .then(y=> console.log(y))
+                          .catch(err=>console.log(err))
+
+            }
+
+            Promise.all()
+
+            apiurl ="http://jsonplaceholder.com"
+            fetch.get(apiurl)
+                    .then(response => response.json())
+                    .then(response => setResponse(response)) //200 201 401, 503
+                    .catch(err=>setError(err)) //
+
+                    error.lenth >0 <Modal ('error msg',err,[
+                    title:'Close',onPress:{handleFetchData}
+                    ])
+                                     
+                                    >
+                    Modal()
+
+
+            function fetch(method = "GET",callback(){
+
+                new Promise( resolve, reject){
+                    return apiurl 
+                } else{
+                    return "some error"
+                }
+            })
+
+            then
+            catch
+            finally
+
+            //ES6 : async / await
+
+             async function calcSum(a, b){
+                    return (new Promise(res, rej)=>)
+                } 
+
+
+            calcSum(); //async
+            calDiv();
+            calMul();
+
+            const sumOfTwoNumer = await calSum(a,b); //return promise
+            const mulOfTwoNums(sumOfTwoNumer.data) //a+b+c
+
+
+
+    - react storage : 10 mins
+    - axios/fetch : 10 mins
+    - components(if anything pending) : 15mins
+    - about you projects (10-15mins)
+        - E- commerce : all assignments were aligned ac/dly
+        - Optional : if any one taking up any new topic(student define)
+        - july: 10 app cv : pure wrngly
+        - e-commerce / optional project : 1(80) or grp(100) of 2 upt 5 students 100
+        - from monday : project discussion session
+                      : wednesday : review ()
+                      : saturday : final review -> submit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Day12/13 : (8:15) -> lab 
+   - custom components(resuablility)

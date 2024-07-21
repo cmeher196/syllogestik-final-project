@@ -4,13 +4,33 @@ import HomeScreen from './screens/HomeScreen';
 import ProductScreen from './screens/ProductScreen';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack'
+import { createDrawerNavigator } from '@react-navigation/drawer';
 
 
 const Stack = createNativeStackNavigator();
+const Drawer = createDrawerNavigator();
+
+const DrawerNavigator = () =>{
+
+  return(
+    <Drawer.Navigator 
+          screenOptions={{
+            headerStyle:{backgroundColor: '#0ff'},
+            contentStyle:{backgroundColor: '#aff'},
+          }}
+          >
+          <Drawer.Screen 
+            name='Feedback'
+            component={Feedback}
+            options={{
+              title: 'My Product Home Screen'
+            }}  
+            />
+          </Drawer.Navigator>
+      )
+}
 
 export default function App() {
-
-
 
   return (
     <> 
@@ -36,7 +56,15 @@ export default function App() {
                 return <Button title='Press Me' onPress={()=>console.log('Button pressed')} />
               }
             }} 
+
           />
+          <Stack.Screen 
+            name='DrawerFeedback'
+            component={DrawerNavigator}
+            options={{
+              title: 'My Feedback Screen'
+            }}  
+            />
         </Stack.Navigator>
       </NavigationContainer>
     </>
