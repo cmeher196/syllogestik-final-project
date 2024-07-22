@@ -592,15 +592,35 @@ Day11
 
 
 
+Day12 :
+    - Reducer : React.js
+        - it was introduced when redux came to React
+        - redux a store management -> [states-> complex type of state]
+        - it is a pure function ??
+                - const decrement = count => return --count
+
+        - reducer is a pure function : global state management
+            - it always produces same output (a,b) => return a+b
+            - bcz it never changes the state/ it doesnt create any side effect.(react)
+            - it takes two params (state, action) => it returns a state 
+            - state: anything (string, number, array, anything) 
+            - action:-> 2 types: type -> which kind of action u want to perform 
+                               : payload -> this is the data tht component send to management in state storage
+            - useEffect :
+
+        
 
 
 
+        - impure func:
+            - let intialvalue = 0;
+             const increment =() =>{
+                return ++intialvalue;
+             }
+
+Today's Assignment : 10 marks
+    - implement Reducer
+    - implement global state management in the existing assignment(merge context api and reducer)
 
 
 
-
-
-
-
-Day12/13 : (8:15) -> lab 
-   - custom components(resuablility)
